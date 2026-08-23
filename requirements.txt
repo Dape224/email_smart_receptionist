@@ -1,0 +1,7 @@
+langgraph
+langchain-mistralai
+langfuse
+pydantic
+python-dotenv
+imap-tools
+requests
