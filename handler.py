@@ -20,6 +20,14 @@ Set human_review to true ONLY if at least one high-risk trigger is met:
    (unexpected password resets, unusual login locations, unverified wire confirmations, phishing).
 Otherwise set human_review to false. Always explain your decision in review_reason.
 
+REPLY DECISION:
+- needs_reply: True ONLY if the sender expects a response (a question, a request,
+  an application awaiting acknowledgment, an invoice needing confirmation).
+  Newsletters / notifications / FYI = False.
+- draft_reply: If needs_reply is True, write the IDEAL reply. It must directly
+  reflect the sender's actual message — acknowledge their specific points and
+  answer their questions. Write in first person as Oladapo. No generic templates.
+
 ### Input Data
 Subject: {subject}
 Body: {body}
@@ -33,6 +41,8 @@ Body: {body}
         "key_points": output.key_points,
         "human_review": output.human_review,
         "review_reason": output.review_reason,
+        "needs_reply": output.needs_reply,   
+        "draft_reply": output.draft_reply,  
     }
 
 
@@ -54,6 +64,14 @@ Set human_review to true ONLY if:
 3. It requires an urgent technical action (e.g., rotate API keys, patch immediately).
 Otherwise set human_review to false. Always explain your decision in review_reason.
 
+REPLY DECISION:
+- needs_reply: True ONLY if the sender expects a response (a question, a request,
+  an application awaiting acknowledgment, an invoice needing confirmation).
+  Newsletters / notifications / FYI = False.
+- draft_reply: If needs_reply is True, write the IDEAL reply. It must directly
+  reflect the sender's actual message — acknowledge their specific points and
+  answer their questions. Write in first person as Oladapo. No generic templates.
+
 ### Input Data
 Subject: {subject}
 Body: {body}
@@ -64,6 +82,8 @@ Body: {body}
         "key_points": output.key_points,
         "human_review": output.human_review,
         "review_reason": output.review_reason,
+        "needs_reply": output.needs_reply,   
+        "draft_reply": output.draft_reply,  
     }
 
 
@@ -84,6 +104,14 @@ Set human_review to true ONLY if:
 2. It announces a schedule change requiring immediate action (match moved, booking deadline).
 Otherwise set human_review to false. Always explain your decision in review_reason.
 
+REPLY DECISION:
+- needs_reply: True ONLY if the sender expects a response (a question, a request,
+  an application awaiting acknowledgment, an invoice needing confirmation).
+  Newsletters / notifications / FYI = False.
+- draft_reply: If needs_reply is True, write the IDEAL reply. It must directly
+  reflect the sender's actual message — acknowledge their specific points and
+  answer their questions. Write in first person as Oladapo. No generic templates.
+
 ### Input Data
 Subject: {subject}
 Body: {body}
@@ -94,6 +122,8 @@ Body: {body}
         "key_points": output.key_points,
         "human_review": output.human_review,
         "review_reason": output.review_reason,
+        "needs_reply": output.needs_reply,   
+        "draft_reply": output.draft_reply,  
     }
 
 
@@ -115,6 +145,14 @@ Set human_review to true ONLY if:
 3. It reports a rejected or failed request that needs follow-up.
 Otherwise set human_review to false. Always explain your decision in review_reason.
 
+REPLY DECISION:
+- needs_reply: True ONLY if the sender expects a response (a question, a request,
+  an application awaiting acknowledgment, an invoice needing confirmation).
+  Newsletters / notifications / FYI = False.
+- draft_reply: If needs_reply is True, write the IDEAL reply. It must directly
+  reflect the sender's actual message — acknowledge their specific points and
+  answer their questions. Write in first person as Oladapo. No generic templates.
+
 ### Input Data
 Subject: {subject}
 Body: {body}
@@ -125,6 +163,8 @@ Body: {body}
         "key_points": output.key_points,
         "human_review": output.human_review,
         "review_reason": output.review_reason,
+        "needs_reply": output.needs_reply,   
+        "draft_reply": output.draft_reply,  
     }
 
 
@@ -147,6 +187,14 @@ Set human_review to true ONLY if:
 Otherwise set human_review to false (treat promotions/spam as no review needed).
 Always explain your decision in review_reason.
 
+REPLY DECISION:
+- needs_reply: True ONLY if the sender expects a response (a question, a request,
+  an application awaiting acknowledgment, an invoice needing confirmation).
+  Newsletters / notifications / FYI = False.
+- draft_reply: If needs_reply is True, write the IDEAL reply. It must directly
+  reflect the sender's actual message — acknowledge their specific points and
+  answer their questions. Write in first person as Oladapo. No generic templates.
+
 ### Input Data
 Subject: {subject}
 Body: {body}
@@ -157,4 +205,6 @@ Body: {body}
         "key_points": output.key_points,
         "human_review": output.human_review,
         "review_reason": output.review_reason,
+        "needs_reply": output.needs_reply,   
+        "draft_reply": output.draft_reply,  
     }

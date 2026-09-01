@@ -11,6 +11,8 @@ class RouterState(TypedDict):
     key_points: str
     human_review: bool
     review_reason: str 
+    needs_reply: bool              # NEW
+    draft_reply: str 
 
 
 class RouteDecision(BaseModel):
@@ -23,4 +25,6 @@ class DepartmentExtraction(BaseModel):
     key_points: str
     human_review: Union[str, bool] = Field(description="Review flag status")
     review_reason: str 
+    needs_reply: bool = False      
+    draft_reply: str = "" 
                       
