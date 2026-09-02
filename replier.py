@@ -14,7 +14,6 @@ def send_reply(to_email: str, subject: str, body: str, original_message_id: str 
     msg["To"] = to_email
     msg["Subject"] = subject if subject.lower().startswith("re:") else f"Re: {subject}"
 
-    # THREADING: point back at the original email so it joins the same thread
     if original_message_id:
         msg["In-Reply-To"] = original_message_id
         msg["References"] = original_message_id
