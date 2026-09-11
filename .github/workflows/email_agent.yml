@@ -29,6 +29,6 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           ESCALATION_WEBHOOK: ${{ secrets.ESCALATION_WEBHOOK }}
-          MISTRAL_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           # ADD YOUR OTHER KEYS HERE IF NEEDED (e.g., LANGFUSE_PUBLIC_KEY)
         run: python mail_reader.py
