@@ -3,7 +3,7 @@ name: Run Email Router Agent
 on:
   schedule:
     # Runs every 10 minutes (Cron syntax: */10 means every 10 mins)
-    - cron: '*/10 * * * *'
+    - cron: '*/20 * * * *'
   workflow_dispatch: # This button allows you to trigger it manually for testing!
 
 jobs:
@@ -29,6 +29,6 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           ESCALATION_WEBHOOK: ${{ secrets.ESCALATION_WEBHOOK }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.GROQ_API_KEY }}
           # ADD YOUR OTHER KEYS HERE IF NEEDED (e.g., LANGFUSE_PUBLIC_KEY)
         run: python mail_reader.py
